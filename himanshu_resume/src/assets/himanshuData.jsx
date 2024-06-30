@@ -1,9 +1,9 @@
-import React from 'react';
+// resumeData.js
 
 const ResumeData = () => {
   const resume = {
     personalInfo: {
-      name: 'Himanshu kar',
+      name: 'Himanshu Kar',
       age: 30,
       address: {
         street: '123 Main St',
@@ -21,7 +21,7 @@ const ResumeData = () => {
       },
       {
         company: 'XYZ Corporation',
-        position: 'Frontend Developer',
+        position: 'Full Stack Developer',
         startDate: '2021-01-01',
         endDate: 'Present',
         description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -69,6 +69,8 @@ const ResumeData = () => {
       },
     ],
   };
+
+  return resume;
 };
 
-  export default ResumeData;
+export default ResumeData;

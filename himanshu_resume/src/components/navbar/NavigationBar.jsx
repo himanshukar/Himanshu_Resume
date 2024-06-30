@@ -1,7 +1,7 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
-import {SearchIcon} from "./SearchIcon.jsx";
-// import {profilePic} from "../../assets/profilePic.png"
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar } from "@nextui-org/react";
+import { SearchIcon } from "./SearchIcon.jsx";
+import { RedirectToGoogleSearch } from "../../api/navigator.jsx"
 
 export default function NavigationBar() {
   return (
@@ -13,7 +13,7 @@ export default function NavigationBar() {
         <NavbarContent className="hidden sm:flex gap-3">
           <NavbarItem>
             <Link color="foreground" href="#">
-              Features
+              Education
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
@@ -23,7 +23,7 @@ export default function NavigationBar() {
           </NavbarItem>
           <NavbarItem>
             <Link color="foreground" href="#">
-              Integrations
+              Projects
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -37,7 +37,12 @@ export default function NavigationBar() {
             input: "text-small",
             inputWrapper: "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
           }}
-          placeholder="Type to search..."
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              RedirectToGoogleSearch(e.target.value);
+            }
+          }}
+          placeholder="Type to Google it..."
           size="sm"
           startContent={<SearchIcon size={18} />}
           type="search"

@@ -1,5 +1,5 @@
 import React from "react";
-import {Avatar} from "@nextui-org/react";
+import { Avatar } from "@nextui-org/react";
 
 export default function UserAvatar() {
   return (
