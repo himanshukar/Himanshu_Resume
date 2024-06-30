@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
-
-const history = useHistory();
 
 const fetchData = async (url) => {
     try {
@@ -72,4 +69,4 @@ const deleteData = async (url) => {
     }
 };
 
-export { redirectToGoogleSearch };
+export { fetchData, postData, putData, deleteData };
