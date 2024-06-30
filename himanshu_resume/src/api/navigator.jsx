@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 
-const Redirect = () => {
+const Redirect = (url) => {
     const [searchText, setSearchText] = useState('');
     const navigate = useNavigate();
 
+
     useEffect(() => {
         const timeout = setTimeout(() => {
-            // redirects to an external URL  
-            window.location.replace("https://www.google.com/search?q="+searchText);
+            window.location.replace(url);
         }, 5000);
         return () => clearTimeout(timeout);
     }, [searchText]);
