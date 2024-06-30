@@ -1,2 +1,2 @@
 # ResumeBuild
-this repo contains resumes
+this resume is made on react UI
