@@ -9,4 +9,4 @@ Task pending for V-1.0:
 -> DynamicJSONStaticUI™ (MVP).
 
 
-Contrubutions are Apriciated and Noted.✍️
+Contributions are Appreciated and Noted.✍️
