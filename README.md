@@ -1,8 +1,12 @@
-# React + Vite
+# Himanshu_Resume
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Status -> In Progress
 
-Currently, two official plugins are available:
+Task pending for V-1.0:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-> Profile image is not visible.
+-> Component imports for UI.
+-> DynamicJSONStaticUI™ (MVP).
+
+
+Contrubutions are Apriciated and Noted.✍️
