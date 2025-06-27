@@ -1,0 +1,13 @@
+/* fabric.css - High quality fabric background with visible fine threads */
+.fabric-bg {
+  background-color: #0a1147;
+  background-image:
+    repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0px, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 8px),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 8px),
+    url('https://www.transparenttextures.com/patterns/denim.png'),
+    linear-gradient(135deg, #0a1147 0%, #1a1e3a 100%);
+  background-blend-mode: multiply, multiply, normal, normal;
+  background-size: 8px 8px, 8px 8px, auto, cover;
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  min-height: 100vh;
+}

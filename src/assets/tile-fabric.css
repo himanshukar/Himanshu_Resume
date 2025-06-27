@@ -1,0 +1,18 @@
+/* tile-fabric.css: For all tiles and buttons in EmbossedTile */
+.embossed-tile-tile, .embossed-tile-btn {
+  color: #090909;
+  background: #e8e8e8;
+  border-radius: 0.5em;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+.embossed-tile-tile:active, .embossed-tile-btn:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+.embossed-tile-btn {
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  cursor: pointer;
+}
