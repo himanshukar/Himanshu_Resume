@@ -1,0 +1,331 @@
+%-------------------------
+% Himanshu Kar Resume
+% Author : Himanshu Kar
+% Based off of: https://github.com/himanshukar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Himanshu Kar} \\ \vspace{5pt}
+    \small \faPhone* \texttt{(+91)8830399466} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{himanshukar@rocketmail.com} \hspace{1pt} $|$ 
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Indian Citizen}
+    \\ \vspace{-3pt}
+\end{center}
+
+
+%-----------Experience Summary-----------
+\section {Experience Summary}
+Senior Backend Engineer with 6+ years of experience specializing in Java, the Spring Ecosystem, and scalable Microservices
+architecture, driving high-impact project delivery and feature innovation. Proven ability to design and implement robust enterprise-grade
+applications focusing on performance, API management, and system optimization. Expertise includes CI/CD (Azure/Jenkins), Apache
+Kafka, and Containerization (Docker/Kubernetes).
+%
+
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Spring Framework Ecosystem} {: Spring, Spring MVC, Spring Boot, Spring
+Batch, Spring Security, Spring WebFlux}\vspace{2pt} \\
+     \textbf{Design Expertise}     {: Design Patterns (Creation, Structural, Behavioral), Low-Level Design (LLD), High-Level Design (HLD), System
+Design}\vspace{2pt} \\
+\textbf{Java Concepts}     {: Core Java, Advanced Java, Multithreading, Concurrency, Streams API, Lambda Expressions, Caching, Performance
+Tuning, Junit}\vspace{2pt} \\
+\textbf{Web Applications}     {: JavaServer Pages (JSP), Servlets, Struts 2, Hibernate, Microservices architecture, RESTful API}\vspace{2pt} \\
+\textbf{Containerization and Orchestration}     {: Docker, Kubernetes, Docker Compose}\vspace{2pt} \\
+\textbf{DevOps and CI/CD}     {: Azure DevOps, Azure Portal, Jenkins, Red Hat OpenShift}\vspace{2pt} \\
+\textbf{Messaging and Data Streaming}     {: Apache Kafka, RabbitMQ}\vspace{2pt} \\
+\textbf{Database and Data Migration}     {: MySQL, PostgreSQL, Oracle, MongoDB, Flyway DB migration scripts}\vspace{2pt} \\
+\textbf{Cloud Computing}     {: Azure Cloud}\vspace{2pt} \\
+\textbf{Monitoring and Logging}     {: Prometheus, Grafana, Kibana}\vspace{2pt} \\
+\textbf{API Development and Integration}     {: OpenAPI (Swagger), SOAP, RESTful API, OAuth 2.0, JSON Web Tokens (JWT)}\vspace{2pt} \\
+\textbf{Frameworks and Libraries}     {: Lombok, Quarkus, Apache Camel, Node-RED, Spring Framework, Redis, Mockito}\vspace{2pt} \\
+\textbf{Tools}     {: IntelliJ IDEA, Eclipse, NetBeans, Visual Studio Code, STS (Spring Framework Tool Suite), Git (Git Bash, GitHub, Bitbucket, GitLab), Jira, Confluence, Azure Boards, Azure Pipelines, Postman, Metadefender, Blackduck, SonarQube, Swagger/OpenAPI, WinSCP, WSL (Windows Subsystem for Linux), Docker Desktop, Kubernetes}\vspace{2pt} \\
+    }}
+ \end{itemize}
+
+
+%
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://www.hitachienergy.com/in/en}{\myuline {Hitachi}}}{Oct. 2023 -- Present}
+      {Research and Development Experienced Professional}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Drove multiple high-impact projects to completion, delivering innovative features and improving existing architectures for scalability
+and maintainability.}
+        \resumeItem{Pioneered Java development and adoption of modern frameworks to optimize project life cycles and address complex business
+requirements.}
+         \resumeItem{Received consistent recognition for technical leadership, mentorship, and active knowledge sharing among team members.}
+        \resumeItem{high-performing backend solutions aligned with enterprise goals.}
+        \resumeItem{\textbf{Projects}:
+            {\myuline {PROMOD}},
+            {\myuline {E7}},
+            \href{https://www.hitachienergy.com/products-and-solutions/energy-portfolio-management/energy-commercial-enablement-software-solutions/retail-and-billing-software-solution}{\myuline {Retail and Billing Software Solution}},
+            \href{https://www.hitachienergy.com/in/en/news-and-events/press-releases/2021/11/hitachi-energy-launches-identiqtm-digital-twin-for-sustainable-flexible-and-secure-power-grids}{\myuline {Integration Service (Digital twin - Asset management)}},
+            \href{https://www.hitachienergy.com/products-and-solutions/asset-and-work-management/enterprise-asset-management}{\myuline {Enterprise Asset Management}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.wipro.com}{\myuline {Wipro}}}{Dec. 2021 -- Oct. 2023}
+      {Full Stack Developer}{Bengaluru, KA}
+      \resumeItemListStart
+        \resumeItem{Estimated work necessary to realize story/requirement through the delivery life cycle}
+        \resumeItem{Worked with architects to deliver appropriate solutions.}
+        \resumeItem{Communicated with multi disciplinary teams across different time zones}
+        \resumeItem{Applied task prioritization techniques to effectively manage backlogs and collaborate with product owners, enhancing team velocity
+and delivery predictability.}
+        \resumeItem{\textbf{Project}:
+            {\myuline {Operating Fact Manager}}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.tikona.in/}{\myuline {Tikona}}}{May 2017 -- Aug. 2017}
+      {Backend Developer}{Mumbai, MH}
+      \resumeItemListStart
+        \resumeItem{Delivered Unit/integration with agile methodology.}
+        \resumeItem{Designed and developed key components by leveraging strong problem-solving and analytical skills to evaluate system performance
+and efficiency, ensuring optimal and scalable backend solutions.}
+        \resumeItem{Produced detailed design documents and ensured technical communication through well-documented code.}
+        \resumeItem{\textbf{Projects}:
+            {\myuline {ICare Portal}},
+            {\myuline {IVR}},
+            {\myuline {IVE Automation}},
+            {\myuline {Central Testing Unit}},
+            {\myuline {EBILL}}}
+      \resumeItemListEnd
+      
+
+      \resumeSubheading
+      {\href{https://thecatalystindia.net//}{\myuline {The Catalyst}}}{April. 2018 -- November. 2018}
+      {Software Development Engineer}{Mumbai, MH}
+      \resumeItemListStart
+        \resumeItem{Collaborated with cross-functional stakeholders on the shop floor to gather, analyze, and translate business requirements into
+technical solutions, ensuring alignment between development and operational teams.}
+        \resumeItem{Provided solutions regarding business logic and delivered minor UI components.}
+        \resumeItem{\textbf{Project}:
+            {\myuline {Work order portal}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{PROMOD}} {Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed backend components in Fortran, C sharp and .NET to ensure accurate market forecasts and high‑performance simulations.}
+            \resumeItem{Maintained and tested core modules to prevent incorrect predictions, financial loss, and regulatory exposure.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{E7}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built backend C sharp and .NET modules to enable consistent data flow between UI and simulation engines.}
+            \resumeItem{Delivered scalable, traceable features supporting lifecycle simulations, compliance reporting, and outage risk reduction.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+         {\textbf{Integration Service (Digital twin - Asset management)}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Implemented robust API and secure state propagation in React/Java for real-time synchronization.}
+            \resumeItem{Designed scalable architecture with strong error handling to preserve digital twin fidelity and operational trust.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+         {\textbf{EAM Lumada}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built secure API, efficient database operations, and React interfaces to surface actionable insights.}
+            \resumeItem{Ensured scalability and code quality to reduce downtime, extend asset life, and enforce compliance.}
+          \resumeItemListEnd
+
+     \resumeProjectHeading
+         {\textbf{Retail and Billing Software Solution}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Modernized legacy billing system to Java 21 and Java FX, improving security and maintainability.}
+            \resumeItem{Migrated SQL, updated encryption, and remediated vulnerabilities to preserve billing accuracy and compliance.}
+          \resumeItemListEnd
+     \resumeProjectHeading
+         {\textbf{Operating Fact Manager}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Implemented performance API and efficient database interactions for centralized operational data.}
+            \resumeItem{Designed intuitive UI with validation and observability to ensure accuracy and system availability.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+         {\textbf{ICare Portal}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed backend modules and JSP pages to consolidate customer records and messaging.}
+            \resumeItem{Maintained integration fidelity and UI responsiveness to improve agent efficiency and customer satisfaction.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+         {\textbf{IVR and IVR Automation}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built API, schedulers, and threaded tasks for automated SMS/email notifications.}
+            \resumeItem{Applied robust error handling and monitoring to ensure timely delivery and preserve customer trust.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+         {\textbf{Work Order Portal}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Debugged issues and integrated new requirements to support deterministic scheduling.}
+            \resumeItem{Ensured accurate assignments and reliable automation to uphold SLAs and improve field productivity.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology}{}
+      {M.S. in Software Engineering}{Vellore, TN}
+      	
+
+    \resumeSubheading
+      {Vellore Institute of Technology}{}
+      {Bachelors in Computer Science}{Vellore, TN}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
